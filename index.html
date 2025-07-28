@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="black_dark header">
+      <section class="section_logo">
+        <div class="burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Фильмы</a></li>
+            <li><a href="#">Сериалы</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./assets/icons/Logo.svg"
+          alt="Лого сайта"
+          class="desktop_logo"
+        />
+      </section>
+      <div class="mobile_logo">
+        <img src="./assets/icons/Logo.svg" alt="Лого сайта" class="Logo" />
+      </div>
+      <section class="section_nav">
+        <button class="nav_button">
+          <p>Главная</p>
+        </button>
+        <button class="nav_button">
+          <p>Фильмы</p>
+        </button>
+        <button class="nav_button">
+          <p>Сериалы</p>
+        </button>
+      </section>
+      <section class="flex_center section_search">
+        <input id="search-input" placeholder="Поиск по сайту" />
+        <button class="button favorite">
+          <img src="./assets/icons/Favorites.svg" alt="Закладка" />
+        </button>
+        <button class="flex_center_2 avatar">
+          <img src="./assets/icons/Avatar.svg" alt="Аватарка" />
+          <img src="./assets/icons/Arrow.svg" alt="Стрелочка вниз" />
+        </button>
+      </section>
+    </header>
+    <body>
+      <div id="movie-list" class="grid grid-cols-3"></div>
+      <div id="movie-details"></div>
+    </body>
+    <footer class="footer">
+      <button class="footer-button">
+        <img src="" alt="Главная" />
+        <span> Главная </span>
+      </button>
+      <button class="footer-button">
+        <img src="" alt="Фильмы" />
+        <span> Фильмы </span>
+      </button>
+      <button class="footer-button">
+        <img src="" alt="Сериалы" />
+        <span> Сериалы </span>
+      </button>
+      <button class="footer-button">
+        <img src="" alt="Поиск" />
+        <span> Поиск </span>
+      </button>
+      <button class="footer-button">
+        <img src="" alt="Избранное" />
+        <span> Избранное </span>
+      </button>
+    </footer>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
