@@ -3,52 +3,63 @@
   margin: 0 auto;
   padding: 1rem;
 }
+
 .text-center {
   text-align: center;
 }
-.mb-4 {
-  margin-bottom: 1rem;
+
+.heading-3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  padding: 1.5rem 0 1rem 2.5rem;
 }
+
 .grid {
   display: grid;
   gap: 1rem;
 }
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, 1fr);
 }
-.grid-cols-3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.card {
-  background: #fff;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-@media (max-width: 48rem) {
-  .grid-cols-3 {
-    grid-template-columns: 1fr;
+.grid-cols-3 {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  padding-left: 2.5rem;
+  @media (max-width: 46.5rem) {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(190px, 2fr));
+    padding: 0rem 1rem;
   }
 }
+.icons {
+  height: 24px;
+  width: 24px;
+}
 
-.black_dark {
+.black-dark {
   background: #090808;
 }
-.black_light {
+.black-light {
   background: #161615;
 }
-.text_white {
+.text-white {
   color: #fff;
 }
+.text-gray-dark {
+  color: #737373;
+}
 
-.flex_center {
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex_center_2 {
+.flex-center-2 {
   display: flex;
   justify-content: center;
   gap: 0.4375rem;
@@ -63,18 +74,58 @@
   border: none;
 }
 
-.desktop_logo {
+.desktop-logo {
   display: flex;
   @media (max-width: 46.5rem) {
     display: none;
   }
 }
 
-.mobile_logo {
+.mobile-logo {
   display: none;
   @media (max-width: 46.5rem) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+}
+
+.h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.large-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+}
+
+.paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.paragraph-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0px;
+}
+
+.description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1;
+  letter-spacing: 0.5px;
 }

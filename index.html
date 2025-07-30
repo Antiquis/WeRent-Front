@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Movie Search</title>
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/utils.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,8 +17,8 @@
     />
   </head>
   <body>
-    <header class="black_dark header">
-      <section class="section_logo">
+    <header class="black-dark header">
+      <section class="section-logo">
         <div class="burger" id="burger">
           <span></span>
           <span></span>
@@ -31,58 +34,76 @@
         <img
           src="./assets/icons/Logo.svg"
           alt="Лого сайта"
-          class="desktop_logo"
+          class="desktop-logo"
         />
       </section>
-      <div class="mobile_logo">
+      <div class="mobile-logo">
         <img src="./assets/icons/Logo.svg" alt="Лого сайта" class="Logo" />
       </div>
-      <section class="section_nav">
-        <button class="nav_button">
-          <p>Главная</p>
+      <section class="section-nav paragraph">
+        <button class="nav-button">
+          <p class="paragraph">Главная</p>
         </button>
-        <button class="nav_button">
-          <p>Фильмы</p>
+        <button class="nav-button">
+          <p class="paragraph">Фильмы</p>
         </button>
-        <button class="nav_button">
-          <p>Сериалы</p>
+        <button class="nav-button">
+          <p class="paragraph">Сериалы</p>
         </button>
       </section>
-      <section class="flex_center section_search">
+      <section class="flex-center section-search">
         <input id="search-input" placeholder="Поиск по сайту" />
         <button class="button favorite">
           <img src="./assets/icons/Favorites.svg" alt="Закладка" />
         </button>
-        <button class="flex_center_2 avatar">
+        <button class="flex-center-2 avatar">
           <img src="./assets/icons/Avatar.svg" alt="Аватарка" />
           <img src="./assets/icons/Arrow.svg" alt="Стрелочка вниз" />
         </button>
       </section>
+      <div
+        class="mobile-search-bar"
+        id="mobile-search-bar"
+        style="display: none"
+      >
+        <input id="mobile-search-input" placeholder="Поиск..." />
+        <button id="mobile-search-close" class="button">
+          <img src="./assets/icons/Close.svg" alt="Закрыть" />
+        </button>
+      </div>
     </header>
     <body>
-      <div id="movie-list" class="grid grid-cols-3"></div>
-      <div id="movie-details"></div>
+      <h3 class="text-white heading-3">Популярные</h3>
+      <section id="movie-popular" class="grid grid-cols-3"></section>
+      <h3 class="text-white heading-3">Недавно просмотренные</h3>
+      <section id="movie-watched" class="grid grid-cols-3"></section>
     </body>
+    <div id="movie-modal" class="modal">
+      <div class="modal-content">
+        <img class="close-modal" src="./assets/icons/Close.svg" alt="Закрыть" />
+        <div id="modal-details"></div>
+      </div>
+    </div>
     <footer class="footer">
       <button class="footer-button">
-        <img src="" alt="Главная" />
-        <span> Главная </span>
+        <img src="./assets/icons/Home.svg" alt="Главная" class="icons" />
+        <span class="description"> Главная </span>
       </button>
       <button class="footer-button">
-        <img src="" alt="Фильмы" />
-        <span> Фильмы </span>
+        <img src="./assets/icons/Films.svg" alt="Фильмы" class="icons" />
+        <span class="description"> Фильмы </span>
       </button>
       <button class="footer-button">
-        <img src="" alt="Сериалы" />
-        <span> Сериалы </span>
+        <img src="./assets/icons/Serials.svg" alt="Сериалы" class="icons" />
+        <span class="description"> Сериалы </span>
+      </button>
+      <button class="footer-button" id="footer-search-btn">
+        <img src="./assets/icons/Search.svg" alt="Поиск" class="icons" />
+        <span class="description"> Поиск </span>
       </button>
       <button class="footer-button">
-        <img src="" alt="Поиск" />
-        <span> Поиск </span>
-      </button>
-      <button class="footer-button">
-        <img src="" alt="Избранное" />
-        <span> Избранное </span>
+        <img src="./assets/icons/Favorites.svg" alt="Избранное" class="icons" />
+        <span class="description"> Избранное </span>
       </button>
     </footer>
     <script type="module" src="./js/main.js"></script>

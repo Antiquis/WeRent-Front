@@ -1,0 +1,26 @@
+.footer {
+  display: none;
+  @media (max-width: 46.5rem) {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: #181818;
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #737373;
+  padding: 0px 0.5rem;
+  gap: 5px;
+}
